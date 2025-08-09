@@ -5,9 +5,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      container_name: samweb
-      ports:
+    container_name: samweb
+     ports:
         - "8080:80"
-      environment:
+    environment:
         - samweb=MyWebPage
 
