@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  samweb:
+    image: html:samweb
+    build:
+      context: .
+      dockerfile: Dockerfile
+      container_name: samweb
+      ports:
+        - "8080:80"
+      environment:
+        - samweb=MyWebPage
+
